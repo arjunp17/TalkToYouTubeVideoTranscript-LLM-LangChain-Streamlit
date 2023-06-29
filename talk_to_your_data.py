@@ -14,7 +14,6 @@ from langchain.document_loaders import YoutubeLoader
 
 
 def generate_response(file_url, openai_api_key, query_text):
-    # Load document if file is uploaded
     if file_url is not None:
         os.environ['OPENAI_API_KEY'] = openai_api_key
         openai.api_key  = os.getenv('OPENAI_API_KEY')
