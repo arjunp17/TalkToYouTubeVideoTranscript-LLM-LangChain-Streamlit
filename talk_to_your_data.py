@@ -2,12 +2,11 @@ import streamlit as st
 import os
 import openai
 from langchain.llms import OpenAI
-from langchain.text_splitter import CharacterTextSplitter
-from langchain.embeddings import OpenAIEmbeddings
-from langchain.vectorstores import Chroma
-from langchain.chains import RetrievalQA
+#from langchain.text_splitter import CharacterTextSplitter
+#from langchain.embeddings import OpenAIEmbeddings
+#from langchain.vectorstores import Chroma
+#from langchain.chains import RetrievalQA
 from langchain.chat_models import ChatOpenAI
-from langchain.document_loaders import CSVLoader
 from langchain.vectorstores import DocArrayInMemorySearch
 from langchain.indexes import VectorstoreIndexCreator
 #from IPython.display import display, Markdown
