@@ -28,8 +28,8 @@ def generate_response(file_url, openai_api_key, query_text):
 
 
 # Page title
-st.set_page_config(page_title='🦜🔗 Ask the Doc App')
-st.title('🦜🔗 Ask the Doc App')
+st.set_page_config(page_title='🦜🔗 Talk to your YouTube Video transcript')
+st.title('🦜🔗 Talk to your YouTube Video transcript')
 
 # File upload
 file_url = st.text_input('Enter your YouTube video URL:', placeholder = 'YouTube video URL.')
