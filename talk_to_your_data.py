@@ -31,7 +31,7 @@ st.set_page_config(page_title='🦜🔗 Ask the Doc App')
 st.title('🦜🔗 Ask the Doc App')
 
 # File upload
-file_url = st.file_uploader('Upload a url')
+file_url = st.text_input('Enter your YouTube video URL:', placeholder = 'YouTube video URL.')
 # Query text
 query_text = st.text_input('Enter your question:', placeholder = 'Please provide a short summary.', disabled=not file_url)
 
