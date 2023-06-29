@@ -4,6 +4,7 @@ A LangChain and Streamlit-powered LLM application to talk to your YouTube video 
 
 ## Deploy on Streamlit
 This is easily deployable on the Streamlit platform. When setting up your StreamLit app you should make sure to add **OPENAI_API_KEY** as an environment variable.
+- [Try it!](https://talktoyouryoutubevideotranscript-78w6ne2r97b.streamlit.app/)
 
 ## References
 - [LangChain Streamlit tutorial](https://blog.streamlit.io/langchain-tutorial-4-build-an-ask-the-doc-app/)
