@@ -37,15 +37,15 @@ def generate_response(file_url, openai_api_key, query_text):
                                                 chain_type="stuff", 
                                                 retriever=retriever, 
                                                 verbose=False)
-        return qa_stuff.query(query_text)
+        return qa_stuff.run(query_text)
 
 
 
 
 
 # Page title
-st.set_page_config(page_title='🦜🔗 Talk to your YouTube Video transcript')
-st.title('🦜🔗 Talk to your YouTube Video transcript')
+st.set_page_config(page_title='🦜🔗 Talk to your YouTube Video')
+st.title('🦜🔗 Talk to your YouTube Video')
 
 # URL Text
 file_url = st.text_input('Enter your YouTube video URL:', placeholder = 'YouTube video URL.')
