@@ -9,6 +9,7 @@ from langchain.chains import RetrievalQA
 from langchain.chat_models import ChatOpenAI
 from langchain.document_loaders import CSVLoader
 from langchain.vectorstores import DocArrayInMemorySearch
+from langchain.indexes import VectorstoreIndexCreator
 #from IPython.display import display, Markdown
 from langchain.document_loaders import YoutubeLoader
 
