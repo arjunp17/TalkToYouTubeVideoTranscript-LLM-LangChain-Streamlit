@@ -22,10 +22,10 @@ def generate_response(file_url, openai_api_key, query_text):
         llm = ChatOpenAI(temperature = 0.0)
         # Load YouTube video transcript from the given url
         loader = YoutubeLoader.from_youtube_url(file_url, add_video_info=False)
-        docs = loader.load()
+        #docs = loader.load()
         # Split documents into chunks
         text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
-        texts = text_splitter.create_documents(docs)
+        texts = text_splitter.create_documents(loader)
         # Select embeddings
         embeddings = OpenAIEmbeddings()
         # Create a vectorstore from documents
