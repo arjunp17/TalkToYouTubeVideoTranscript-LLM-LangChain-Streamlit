@@ -21,7 +21,7 @@ def generate_response(file_url, openai_api_key, query_text):
         openai.api_key  = os.getenv('OPENAI_API_KEY')
         loader = YoutubeLoader.from_youtube_url(file_url, add_video_info=False)
         index = VectorstoreIndexCreator(vectorstore_cls=DocArrayInMemorySearch).from_loaders([loader])
-        return index.query(query)
+        return index.query(query_text)
 
 
 
