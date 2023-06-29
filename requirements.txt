@@ -3,3 +3,4 @@ langchain
 openai 
 tiktoken
 youtube-transcript-api
+docarray
